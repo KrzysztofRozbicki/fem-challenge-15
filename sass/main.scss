@@ -1,0 +1,26 @@
+@use '../sass/utils' as *;
+@use '../sass/components' as *;
+
+body {
+  font-family: var(--ff-primary);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--bg-primary-500);
+}
+
+.container {
+  overflow: hidden;
+}
+
+.wrapper {
+  padding: 1.5rem;
+}
+
+.hero {
+  padding-top: 1.75rem;
+  padding-bottom: 2rem;
+}
