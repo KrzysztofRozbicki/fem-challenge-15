@@ -21,14 +21,24 @@
     height: 221px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin-top: 14.875rem;
+    margin-top: 13rem;
+    background-image: url('../assets/pattern-blur.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   &__photo {
     position: absolute;
     width: 252px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-45%);
     bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .quote {
+    padding-inline: 3.625rem;
   }
 }

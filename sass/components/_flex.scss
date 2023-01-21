@@ -1,0 +1,39 @@
+@use '../utils' as *;
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--header {
+    justify-content: space-between;
+    width: 100%;
+  }
+  &--stats {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &--footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &--social-media {
+    justify-content: space-between;
+    gap: 1.75rem;
+  }
+}
+
+@media (min-width: $tablet-size) {
+
+    .flex--stats {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .flex--footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

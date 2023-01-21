@@ -17,14 +17,19 @@
     <title>Frontend Mentor | Suite landing page</title>
   </head>
   <body>
-    <header class="flex flex--header container">
+    <header class="flex flex--header header container">
       <img src="./assets/logo.svg" alt="Suite company" />
       <button class="button button--400">Request Beta Access</button>
     </header>
     <main>
-      <section class="container hero">
+      <section class="container container--hero hero">
         <h1 class="hero__header header-700">
-          A <span class="header-700--bold">super <div class="hero__curve">solution</div></span> for your
+          A
+          <span class="header-700--bold"
+            >super
+            <div class="hero__curve">solution</div></span
+          ><br />
+          for your
           <span class="header-700--bold"> business. </span>
         </h1>
         <p class="hero__text text-450">
@@ -51,24 +56,28 @@
   (min-resolution: 2dppx)"
             type="image/webp"
           />
-          <img class="hero__photo" src="./assets/image-hero-landscape.webp" alt="Picture of smartphone" />
+          <img
+            class="hero__photo"
+            src="./assets/image-hero-landscape.webp"
+            alt="Picture of smartphone"
+          />
         </picture>
       </section>
-      <section class="container stat flex flex--stats">
-        <div class="stat__block">
+      <section class="container flex flex--stats stat">
+        <div>
           <h2 class="header-650">2K+</h2>
           <p class="text-400">companies</p>
         </div>
-        <div class="stat__block">
+        <div>
           <h2 class="header-650">8</h2>
           <p class="text-400">languages</p>
         </div>
-        <div class="stat__block">
+        <div>
           <h2 class="header-650">2K+</h2>
           <p class="text-400">leads</p>
         </div>
       </section>
-      <div class="container container--quote">
+      <section class="container container--quote">
         <div class="quote__photo-box bg-600">
           <picture class="quote__photo">
             <source
@@ -92,8 +101,6 @@
             <img src="./assets/image-jeremy-small.webp" alt="Picture of smartphone" />
           </picture>
         </div>
-      </div>
-      <section class="container container--quote bg-500 ">
         <div class="quote bg-600">
           <img class="quote__curve" src="./assets/pattern-curved-line-2.svg" alt="curved line" />
           <h2 class="quote__header header-600">
@@ -108,31 +115,33 @@
         </div>
       </section>
     </main>
-    <footer class="bg-500 footer flex flex--footer">
-      <img src="./assets/logo.svg" alt="Suite company" />
-      <p class="text-350">Copyright - Suite</p>
-      <div class="flex flex--social-media">
-        <a href="#" aria-label="facebook">
-          <img src="./assets/icon-facebook.svg" alt="facebook" />
-        </a>
-        <a href="#" aria-label="twitter">
-          <img src="./assets/icon-instagram.svg" alt="facebook" />
-        </a>
-        <a href="#" aria-label="instagram">
-          <img src="./assets/icon-twitter.svg" alt="facebook" />
-        </a>
-      </div>
-      <div class="attribution">
-        Challenge by
-        <a
-          class="attribution__link"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-        >
-          Frontend Mentor
-        </a>
-        Coded by
-        <a class="attribution__link" href="https://pogbit.com/" target="_blank"> @K. Rozbicki </a>
+    <footer class="bg-500 footer">
+      <div class="container flex flex--footer">
+        <img src="./assets/logo.svg" alt="Suite company" />
+        <p class="text-350">Copyright - Suite</p>
+        <div class="flex flex--social-media">
+          <a href="#" aria-label="facebook">
+            <img src="./assets/icon-facebook.svg" alt="facebook" />
+          </a>
+          <a href="#" aria-label="twitter">
+            <img src="./assets/icon-twitter.svg" alt="facebook" />
+          </a>
+          <a href="#" aria-label="instagram">
+            <img src="./assets/icon-instagram.svg" alt="facebook" />
+          </a>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a
+            class="attribution__link"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+          >
+            Frontend Mentor
+          </a>
+          Coded by
+          <a class="attribution__link" href="https://pogbit.com/" target="_blank"> @K. Rozbicki </a>
+        </div>
       </div>
     </footer>
   </body>

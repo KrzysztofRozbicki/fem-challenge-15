@@ -2,7 +2,8 @@
 
 .hero {
   text-align: left;
-  padding-block: 2rem;
+  padding-top: 2rem;
+  position: relative;
   &__curve {
     position: relative;
     display: inline-block;
@@ -23,5 +24,36 @@
 
   &__photo {
     margin-top: 2rem;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .hero {
+    padding: 0;
+    padding-right: 7.25rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero__header {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero__text {
+    max-width: 21.875rem;
+  }
+
+  .hero__curve {
+    height: 5.5rem;
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .hero__photo {
+    position: absolute;
+    width: 17.5rem;
+    top: 0;
+    right: 2.5rem;
+    z-index: -1;
   }
 }

@@ -1,0 +1,33 @@
+@use '../utils' as *;
+
+.footer {
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 28.75rem;
+    width: 100%;
+    top: -28.75rem;
+    background-color: var(--bg-primary-500);
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .footer {
+    padding-top: 4.75rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .footer::before {
+    content: '';
+    position: absolute;
+    height: 28.75rem;
+    width: 100%;
+    top: -28.75rem;
+    left: 0;
+    background-color: var(--bg-primary-500);
+    z-index: -1;
+  }
+}

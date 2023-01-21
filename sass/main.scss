@@ -12,42 +12,34 @@ body {
 .container {
   padding-inline: 1rem;
   width: 100%;
-  display: block;
+  margin-inline: auto;
   &--quote {
     padding: 0;
   }
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &--header {
-    padding-block: 1.5rem;
-    justify-content: space-between;
-    width: 100%;
-  }
-  &--stats {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  &--footer {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  &--social-media {
-    justify-content: space-between;
-    gap: 1.75rem;
-  }
-}
-
-.stat {
+.header {
   padding-block: 1.5rem;
 }
 
-.footer {
-  padding-top: 3.5rem;
-  padding-bottom: 5rem;
+.stat {
+  padding-block: 3.5rem;
+}
+
+@media (min-width: $tablet-size) {
+  .container {
+    max-width: $tablet-size;
+    padding-inline: 2rem;
+  }
+
+  .container--hero {
+    padding-right: 9.75rem;
+  }
+
+  .header {
+    padding-block: 2.5rem;
+  }
+  .stat {
+    padding-block: 5.625rem;
+  }
 }
