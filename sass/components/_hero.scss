@@ -1,0 +1,27 @@
+@use '../utils' as *;
+
+.hero {
+  text-align: left;
+  padding-block: 2rem;
+  &__curve {
+    position: relative;
+    display: inline-block;
+    background-image: url('../assets/pattern-curved-line-1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4.5rem;
+    padding-top: 1.5rem;
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__photo {
+    margin-top: 2rem;
+  }
+}

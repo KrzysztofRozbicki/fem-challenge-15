@@ -7,15 +7,14 @@
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-  @include text(var(--fs-300), var(--text-primary-500), 400, 1.2);
+  @include text(var(--fs-200), var(--text-primary-500), 400, 1.2);
   &__link {
-    color: inherit;
     font-weight: 700;
     transition: 0.3s ease-in;
-    color: var(--text-accent-500);
+    color: var(--text-primary-700);
     &:hover,
     &:focus {
-      color: var(--text-accent-600);
+      color: var(--button-accent-400);
     }
   }
 }

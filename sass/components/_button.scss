@@ -1,0 +1,44 @@
+@use '../utils' as *;
+
+.button {
+  border-radius: 6px;
+  border: none;
+  outline: 1px solid var(--text-primary-700);
+  transition: all 0.5s ease-in;
+
+  &--400 {
+    background-color: var(--bg-primary-100);
+    padding: 0.75rem 1rem;
+    @include text(var(--fs-300), var(--text-primary-700), 700, 1.71);
+    letter-spacing: -0.15px;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: var(--bg-primary-600);
+      color: var(--text-primary-100);
+    }
+  }
+
+  &--500 {
+    background-color: var(--bg-primary-600);
+    padding: 0.875rem 2rem;
+    @include text(var(--fs-550), var(--text-primary-100), 700, 1.77);
+    letter-spacing: -0.18px;
+    &:hover,
+    &:focus {
+      outline: none;
+      cursor: pointer;
+      background-color: none;
+      background: var(--button-gradient-500);
+    }
+  }
+}
+
+@media (min-width: $tablet-size) {
+  :root {
+    .button--400 {
+      padding-inline: 1.5rem;
+      line-height: 2;
+    }
+  }
+}

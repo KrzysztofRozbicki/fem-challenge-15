@@ -1,41 +1,54 @@
 :root {
-  --ff-primary: 'Karla', sans-serif;
+  --ff-primary: 'Epilogue', sans-serif;
 
-  --fs-300: 0.5rem;
-  --fs-400: 0.875rem; //14px CONST
-  --fs-450: 0.875rem; //14px
-  --fs-475: 0.9375rem; //15px
-  --fs-500: 1rem; //16px CONST
-  --fs-600: 1.125rem; //18px CONST
-  --fs-700: 1.25rem; //20px
-  --fs-900: 2rem; //32px CONST
+  --fs-200: 0.5rem;
+  --fs-300: 0.875rem; //14px
+  --fs-350: 0.9375rem; //15px CONST
+  --fs-400: 1rem; // 16px CONST
+  --fs-450: 1rem; // 16px
+  --fs-500: 1.125rem; //18px
+  --fs-550: 1.125rem; //18px CONST
+  --fs-600: 2.5rem; //40px
+  --fs-650: 3rem; //48px CONST
+  --fs-700: 2.375rem; //38px
 
-  --text-primary-100: #ffffff;
-  --text-primary-300: hsla(0, 0%, 100%, 0.5);
-  --text-primary-400: hsla(0, 0%, 100%, 0.75);
-  --text-primary-500: hsl(218, 22%, 67%);
+  --button-accent-400: #a060ff;
+  --button-accent-500: #cb30e3;
+  --button-accent-600: #ffa84e;
 
-  --text-accent-500: hsl(179, 62%, 43%);
-  --text-accent-600: hsl(71, 73%, 54%);
+  --text-primary-100: #faf8f6;
+  --text-primary-400: #f3ede7;
+  --text-primary-500: #49566d;
+  --text-primary-700: #172339;
 
   --bg-primary-100: var(--text-primary-100);
-  --bg-primary-500: hsl(204, 43%, 93%);
-  --bg-primary-600: hsl(178, 48%, 52%);
-  --bg-primary-700: var(--text-accent-500);
+  --bg-primary-500: var(--text-primary-400);
+  --bg-primary-600: var(--text-primary-700);
+  --button-primary-500: var(--text-primary-700);
 
-  --button-primary-500: var(--text-accent-600);
-
-  --box-shadow-500: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
-  --box-shadow-550: inset 0px 10px 10px rgba(0, 0, 0, 0.0973011);
-  --box-shadow-600: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+  --button-gradient-500: linear-gradient(
+    135deg,
+    var(--button-accent-400) 0%,
+    var(--button-accent-500) 49.21%,
+    var(--button-accent-600) 100%
+  );
 }
 
-$desktop-size: 48em;
+$tablet-size: 48em;
+$desktop-size: 64em;
+
+@media (min-width: $tablet-size) {
+  :root {
+    --fs-300: 1rem;
+    --fs-700: 3.5rem;
+  }
+}
 
 @media (min-width: $desktop-size) {
   :root {
-    --fs-450: 1rem; //16px
-    --fs-475: 1.125rem; //18px
-    --fs-700: 1.5rem; //24px
+    --fs-450: 1.125rem;
+    --fs-550: 1.25rem;
+    --fs-600: 3rem;
+    --fs-700: 4.5rem;
   }
 }
