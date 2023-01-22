@@ -259,7 +259,8 @@
   }
   .hero__photo {
     top: -2rem;
-    width: 19.5rem;
+    right: -2.5rem;
+    width: 350px;
     height: 37.5rem;
   }
 }
