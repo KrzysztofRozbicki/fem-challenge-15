@@ -22,18 +22,45 @@
     justify-content: space-between;
     gap: 1.75rem;
   }
+
+  &--hero {
+    flex-direction: column;
+  }
+
+  &--quote {
+    display: inline-block;
+  }
 }
 
 @media (min-width: $tablet-size) {
+  .flex--stats {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-    .flex--stats {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+  .flex--footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
-    .flex--footer {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+@media (min-width: $desktop-size) {
+  .flex--stats {
+    max-width: 12rem;
+    flex-direction: column;
+    height: 100%;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+
+  .flex--hero {
+    width:100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flex--quote {
+    display: flex;
+  }
 }

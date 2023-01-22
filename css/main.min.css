@@ -35,7 +35,7 @@
     --fs-700: 3.5rem;
   }
 }
-@media (min-width: 64em) {
+@media (min-width: 80em) {
   :root {
     --fs-450: 1.125rem;
     --fs-550: 1.25rem;
@@ -119,7 +119,7 @@
   letter-spacing: 0.08px;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 80em) {
   .header-700 {
     line-height: 1.08;
   }
@@ -225,7 +225,6 @@
 @media (min-width: 48em) {
   .hero {
     padding: 0;
-    padding-right: 7.25rem;
     padding-top: 2.25rem;
     padding-bottom: 2.5rem;
   }
@@ -237,16 +236,31 @@
     max-width: 21.875rem;
   }
   .hero__curve {
-    height: 5.5rem;
-    padding-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    height: 6.5rem;
+    padding-top: 3.5rem;
   }
   .hero__photo {
     position: absolute;
     width: 17.5rem;
     top: 0;
-    right: 2.5rem;
+    right: 0;
     z-index: -1;
+  }
+}
+@media (min-width: 80em) {
+  .hero {
+    padding: 0;
+  }
+  .hero__header {
+    margin-top: 4rem;
+  }
+  .hero__text {
+    margin-bottom: 3.25rem;
+  }
+  .hero__photo {
+    top: -2rem;
+    width: 19.5rem;
+    height: 37.5rem;
   }
 }
 .quote {
@@ -288,6 +302,33 @@
     padding-inline: 3.625rem;
   }
 }
+@media (min-width: 80em) {
+  .quote {
+    padding-block: 5.5rem;
+    padding-left: 39.625rem;
+    padding-right: 7.75rem;
+    margin-top: 18.5rem;
+    border-radius: 15px;
+    text-align: left;
+    position: relative;
+    background-image: url("../assets/pattern-blur.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 100px;
+  }
+  .quote__curve {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .quote__photo {
+    -webkit-transform: translate(50%, 17.1%);
+            transform: translate(50%, 17.1%);
+    z-index: 2;
+    scale: 1.46;
+  }
+}
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +366,15 @@
           justify-content: space-between;
   gap: 1.75rem;
 }
+.flex--hero {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.flex--quote {
+  display: inline-block;
+}
 
 @media (min-width: 48em) {
   .flex--stats {
@@ -346,6 +396,35 @@
             justify-content: space-between;
   }
 }
+@media (min-width: 80em) {
+  .flex--stats {
+    max-width: 12rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    gap: 4rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .flex--hero {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flex--quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .footer {
   padding-top: 3.5rem;
   padding-bottom: 5rem;
@@ -354,10 +433,12 @@
 .footer::before {
   content: "";
   position: absolute;
-  height: 28.75rem;
+  height: 29.5rem;
+  top: -29.5rem;
   width: 100%;
-  top: -28.75rem;
+  left: 0;
   background-color: var(--bg-primary-500);
+  z-index: -1;
 }
 
 @media (min-width: 48em) {
@@ -365,15 +446,11 @@
     padding-top: 4.75rem;
     padding-bottom: 4.5rem;
   }
+}
+@media (min-width: 80em) {
   .footer::before {
-    content: "";
-    position: absolute;
-    height: 28.75rem;
-    width: 100%;
-    top: -28.75rem;
-    left: 0;
-    background-color: var(--bg-primary-500);
-    z-index: -1;
+    height: 16.5rem;
+    top: -16.5rem;
   }
 }
 body {
@@ -399,12 +476,13 @@ body {
 
 .stat {
   padding-block: 3.5rem;
+  text-align: center;
 }
 
 @media (min-width: 48em) {
   .container {
     max-width: 48em;
-    padding-inline: 2rem;
+    padding-inline: 2.25rem;
   }
   .container--hero {
     padding-right: 9.75rem;
@@ -414,5 +492,20 @@ body {
   }
   .stat {
     padding-block: 5.625rem;
+  }
+}
+@media (min-width: 80em) {
+  .container {
+    max-width: 90rem;
+    padding-inline: 10.25rem;
+  }
+  .header {
+    padding-top: 3.125rem;
+    padding-bottom: 3.5rem;
+  }
+  .stat {
+    padding: 0;
+    margin-top: 6rem;
+    text-align: left;
   }
 }/*# sourceMappingURL=main.min.css.map */

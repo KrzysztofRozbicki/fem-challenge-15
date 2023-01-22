@@ -42,3 +42,31 @@
     padding-inline: 3.625rem;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .quote {
+    padding-block: 5.5rem;
+    padding-left: 39.625rem;
+    padding-right: 7.75rem;
+    margin-top: 18.5rem;
+    border-radius: 15px;
+    text-align: left;
+    position: relative;
+    background-image: url('../assets/pattern-blur.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 100px;
+  }
+
+  .quote__curve {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .quote__photo {
+    transform: translate(50%, 17.1%);
+    z-index: 2;
+    scale: 1.46;
+  }
+}

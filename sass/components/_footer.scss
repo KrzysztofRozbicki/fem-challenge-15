@@ -7,10 +7,12 @@
   &::before {
     content: '';
     position: absolute;
-    height: 28.75rem;
+    height: 29.5rem;
+    top: -29.5rem;
     width: 100%;
-    top: -28.75rem;
+    left: 0;
     background-color: var(--bg-primary-500);
+    z-index: -1;
   }
 }
 
@@ -19,15 +21,11 @@
     padding-top: 4.75rem;
     padding-bottom: 4.5rem;
   }
+}
 
+@media (min-width: $desktop-size) {
   .footer::before {
-    content: '';
-    position: absolute;
-    height: 28.75rem;
-    width: 100%;
-    top: -28.75rem;
-    left: 0;
-    background-color: var(--bg-primary-500);
-    z-index: -1;
+        height: 16.5rem;
+    top: -16.5rem;
   }
 }
